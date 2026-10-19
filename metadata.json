@@ -1,0 +1,8 @@
+{
+  "name": "Remix Reframe Studios | Private-Market Content \u0026 Storytelling",
+  "description": "Reframe Studios helps private-market firms turn investment thinking, partner expertise, and portfolio stories into content that builds visibility, credibility, and stronger relationships.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
