@@ -31,74 +31,71 @@ export const CORE_PACKAGES: CorePackage[] = [
   {
     id: "youtube-content-ip",
     title: "YouTube Content IP",
-    tagline: "Episodic boardroom conversations, thesis documentaries, and high-retention video assets.",
+    tagline: "Boardroom insight in a format founders remember.",
     summary:
-      "We design, produce, and distribute cinematic video properties for private-market firms. Rather than superficial social vlogging, we build episodic shows around hard investment theses and founder transformations.",
+      "We turn partner conversations and market views into short, sharp video assets. The goal is direct signal, not volume.",
     deliverables: [
-      "4K multi-cam studio & on-site partner interview shoots",
-      "High-retention vertical edits for founder feeds & LinkedIn",
-      "Episodic series packaging, title architecture & thumbnail design",
-      "Full audio syndication for Spotify & Apple Podcasts",
+      "Partner interviews and thesis-led shoots",
+      "Short-form edits for LinkedIn and founder channels",
+      "Series packaging for repeat distribution",
     ],
     differentiators: {
       investmentThinking:
-        "Deconstructing macro theses, sector maps, and contrarian capital allocation rather than casual banter.",
+        "Clear investment logic, not commentary for commentary’s sake.",
       partnerExpertise:
-        "Zero partner burden—a 45-minute structured dialogue extracts partner intuition without demanding prep or script memorization.",
+        "One structured conversation produces a usable content system without extra partner load.",
       portfolioStorytelling:
-        "Documenting how partners and CEOs solved enterprise churn, unit economics, or international expansion.",
+        "The practical and operational story behind the decisions that mattered.",
     },
-    bestFor: "Firms seeking defensible intellectual gravity and proprietary inbound deal flow from founders who already know their thesis.",
-    sampleAsset: "Behind The Boardroom: Inside Our $40M Vertical SaaS Thesis",
-    cadence: "Monthly Episodic Release",
+    bestFor: "Firms that need a clear, repeatable media asset around their core thinking.",
+    sampleAsset: "Inside Our Vertical SaaS Thesis",
+    cadence: "Monthly Release",
   },
   {
     id: "event-content-engine",
     title: "Event Content Engine",
-    tagline: "Extracting months of evergreen digital leverage from a single annual summit, LP meeting, or keynote.",
+    tagline: "One event. Multiple usable content moments.",
     summary:
-      "Don't let your firm's most powerful live speaking moments vanish into an unindexed conference room. We embed our editorial team to capture, extract, and broadcast the decisive moments to founders and allocators worldwide.",
+      "We capture the useful parts of a keynote, panel, or summit and turn them into assets that can travel after the event is over.",
     deliverables: [
-      "On-site multi-camera event capture & rapid-turnaround editing",
-      "Keynote & panel extraction architecture (the 30s breakthrough cuts)",
-      "Executive fireside & portfolio CEO summit interviews",
-      "Post-event recap editorial essays & LP distribution packages",
+      "On-site capture and rapid edits",
+      "High-signal clips from keynote and panel moments",
+      "Post-event recap assets for distribution",
     ],
     differentiators: {
       investmentThinking:
-        "Isolating high-conviction insights and hard market forecasts from stage talks before they're lost to conference archives.",
+        "The strongest point of view, cut out from stage noise.",
       partnerExpertise:
-        "Zero partner desk work—we capture partners in their natural element on stage or in green rooms and deliver broadcast-grade cuts within 72 hours.",
+        "No extra partner prep. We capture the conversation as it happens.",
       portfolioStorytelling:
-        "Filming live founder-partner interactions, celebrating portfolio milestones, and capturing executive camaraderie on site.",
+        "Founder and portfolio moments that can be repurposed cleanly after the event.",
     },
-    bestFor: "Firms hosting annual general meetings, CEO summits, or speaking at marquee global private equity conferences.",
-    sampleAsset: "The 30 Seconds Worth Hearing: What We Told 500 CEOs at Our Annual Summit",
-    cadence: "Per-Event Sprint",
+    bestFor: "Firms that hold events, summits, or speaking moments that should keep working after the room clears.",
+    sampleAsset: "The 30 Seconds Worth Hearing",
+    cadence: "Per Event",
   },
   {
     id: "omnichannel-brand-presence",
     title: "Omnichannel Brand Presence",
-    tagline: "Synchronized digital omnipresence across LinkedIn executive points of view, carousels, and editorial essays.",
+    tagline: "Consistent visibility without turning partners into creators.",
     summary:
-      "A continuous, synchronized editorial operation that keeps your firm top-of-mind with founders, advisors, and co-investors every single week without turning partners into full-time creators.",
+      "We build a steady content rhythm around the few ideas that matter most: executive view, founder relevance, and clear market framing.",
     deliverables: [
-      "Partner LinkedIn voice architecture & executive commentary",
-      "Founder-focused framework carousels & thesis visual guides",
-      "Long-form firm journal articles & quarterly LP viewpoints",
-      "Curated quote-led typography assets for cross-platform circulation",
+      "Executive commentary and point-of-view posts",
+      "Founder-facing explainers and framework assets",
+      "Quarterly firm perspective and editorial updates",
     ],
     differentiators: {
       investmentThinking:
-        "Translating internal investment committee memorandums into authoritative public viewpoints that set the sector agenda.",
+        "Turn a thesis into a defined external point of view.",
       partnerExpertise:
-        "45 minutes of monthly partner voice debrief translates into an entire month of verified, defensible market commentary.",
+        "One monthly voice brief can create a month of consistent market commentary.",
       portfolioStorytelling:
-        "Packaging operating turnaround playbooks and milestone retrospectives into repeatable founder magnets.",
+        "Keep portfolio milestones, operating lessons, and founder stories in active circulation.",
     },
-    bestFor: "Partners and investment teams who want to build a recognized category voice while staying 100% focused on deals and operations.",
-    sampleAsset: "Why We Invested: 3 Operating Inflections That Won Our Conviction",
-    cadence: "Continuous Multichannel Engine",
+    bestFor: "Firms that want a stable, credible market presence without adding operational friction.",
+    sampleAsset: "Why We Invested",
+    cadence: "Ongoing",
   },
 ];
 
