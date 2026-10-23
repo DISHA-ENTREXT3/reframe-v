@@ -134,14 +134,23 @@ export const TransformationSpotlight: React.FC<TransformationSpotlightProps> = (
                   {currentExample.afterSnippet}
                 </p>
 
-                <div className="p-5 rounded-xl bg-[#1C362A] border border-white/10 mb-6">
-                  <div className="text-xs uppercase tracking-wider text-[#DFD5C6] mb-3 font-mono-numbers">
-                    OUTPUT
+                <div className={`grid gap-4 mb-6 ${activeTab === 'why-we-invested' ? 'md:grid-cols-[0.9fr_1.1fr] items-stretch' : ''}`}>
+                  <div className="p-5 rounded-xl bg-[#1C362A] border border-white/10">
+                    <div className="text-xs uppercase tracking-wider text-[#DFD5C6] mb-3 font-mono-numbers">
+                      OUTPUT
+                    </div>
+                    <div className="space-y-2 text-sm text-[#FAF7F2] leading-relaxed">
+                      <p>Portfolio announcement → Investment reasoning</p>
+                      <p>Short video / point of view</p>
+                    </div>
                   </div>
-                  <div className="space-y-2 text-sm text-[#FAF7F2] leading-relaxed">
-                    <p>Portfolio announcement → Investment reasoning</p>
-                    <p>Short video / point of view</p>
-                  </div>
+                  {activeTab === 'why-we-invested' && (
+                    <img
+                      src="/9.jpeg"
+                      alt="Why We Invested editorial campaign across video, social, and print formats"
+                      className="w-full h-full min-h-40 aspect-[3/2] object-cover rounded-xl border border-white/10"
+                    />
+                  )}
                 </div>
               </div>
             </div>
