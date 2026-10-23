@@ -92,7 +92,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(196,85,50,0.24),transparent_24%),linear-gradient(180deg,rgba(20,40,30,0.08),rgba(20,40,30,0.56)_63%,rgba(20,40,30,0.72))] z-10 pointer-events-none" />
             <video
               src={heroVideoSrc}
-              poster={HERO_CONTENT.image}
               autoPlay
               muted
               loop
