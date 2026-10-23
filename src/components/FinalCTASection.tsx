@@ -34,7 +34,7 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onOpenContact 
         </FadeIn>
 
         <FadeIn delay={0.26} distance={16}>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
               onClick={onOpenContact}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 text-sm font-semibold tracking-wide text-[#14281E] bg-[#FAF7F2] rounded-md hover:bg-[#DFD5C6] active:scale-[0.98] transition-all shadow-xl group"
@@ -43,10 +43,6 @@ export const FinalCTASection: React.FC<FinalCTASectionProps> = ({ onOpenContact 
               <ArrowUpRight className="w-4 h-4 text-[#C45532] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </button>
           </div>
-
-          <p className="text-xs text-[#DFD5C6]/70 max-w-md mx-auto">
-            {FINAL_CTA_CONTENT.supportText}
-          </p>
         </FadeIn>
       </div>
     </section>

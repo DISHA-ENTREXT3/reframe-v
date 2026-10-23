@@ -3,6 +3,7 @@ import { Hero } from '../components/Hero';
 import { TransformationSpotlight } from '../components/TransformationSpotlight';
 import { PackagesSection } from '../components/PackagesSection';
 import { WorkSection } from '../components/WorkSection';
+import { AboutSection } from '../components/AboutSection';
 import { FinalCTASection } from '../components/FinalCTASection';
 import { FloatingMarquee } from '../components/FloatingMarquee';
 import { ScrollSection } from '../components/MotionReveal';
@@ -52,7 +53,12 @@ export const HomePage: React.FC<HomePageProps> = ({
         <WorkSection onSelectCase={(item) => onSelectCase(item)} />
       </ScrollSection>
 
-      {/* 5. DIRECT CALL TO CONVERSATION */}
+      {/* 5. SMALL ABOUT REFRAME */}
+      <ScrollSection id="about" delay={0.05}>
+        <AboutSection onOpenContact={() => onOpenContact()} />
+      </ScrollSection>
+
+      {/* 6. DIRECT CALL TO CONVERSATION */}
       <ScrollSection id="contact" delay={0.05}>
         <FinalCTASection onOpenContact={() => onOpenContact()} />
       </ScrollSection>

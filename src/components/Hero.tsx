@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import { ArrowDown, ArrowUpRight, Play, Volume2 } from 'lucide-react';
+import React from 'react';
+import { ArrowDown, ArrowUpRight } from 'lucide-react';
 import { HERO_CONTENT } from '../data/content';
 import { FadeIn } from './MotionReveal';
+
+const heroVideoSrc = new URL('../../IMG_2765.MP4', import.meta.url).href;
 
 interface HeroProps {
   onOpenContact: () => void;
 }
 
 export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
-  const [isPlayingSnippet, setIsPlayingSnippet] = useState(false);
-
   const handleScrollToPackages = () => {
     const el = document.getElementById('packages');
     if (el) {
@@ -31,7 +31,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
           </div>
         </FadeIn>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-8 lg:gap-10 items-center mb-12 md:mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-8 lg:gap-10 items-center mb-12 md:mb-16">
           <div>
             <FadeIn delay={0.12} distance={28}>
               <h1 className="max-w-[680px] text-4xl sm:text-5xl md:text-6xl lg:text-[4.3rem] xl:text-[5rem] font-serif-editorial leading-[0.96] text-[#161715] tracking-[-0.04em] mb-6 md:mb-8">
@@ -76,85 +76,28 @@ export const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
 
           <FadeIn delay={0.32} distance={20}>
             <div className="relative">
-              <div className="rounded-[28px] border border-[#161715]/10 bg-[#F3EEE4] p-5 shadow-[0_18px_40px_rgba(20,40,30,0.08)]">
-                <div className="flex items-center justify-between pb-4 border-b border-[#161715]/10 mb-4">
-                  <span className="text-[10px] uppercase tracking-[0.22em] text-[#63615A] font-mono-numbers">
-                    Studio Blueprint
-                  </span>
-                  <span className="flex items-center gap-2 text-[10px] font-semibold text-[#14281E]">
-                    <span className="w-2.5 h-2.5 rounded-full bg-[#C45532]" />
-                    Zero desk time
-                  </span>
-                </div>
-
-                <div className="grid gap-3 sm:grid-cols-2">
-                  <div className="rounded-2xl bg-[#14281E] p-4 text-[#FAF7F2]">
-                    <div className="text-[10px] uppercase tracking-[0.18em] text-[#DFD5C6] font-mono-numbers mb-4">
-                      Coverage
-                    </div>
-                    <div className="text-3xl font-serif-editorial leading-none mb-2">12</div>
-                    <div className="text-sm text-[#FAF7F2]/80">partner narratives built</div>
-                  </div>
-
-                  <div className="rounded-2xl border border-[#161715]/10 bg-[#FAF7F2] p-4">
-                    <div className="text-[10px] uppercase tracking-[0.18em] text-[#63615A] font-mono-numbers mb-4">
-                      Recall
-                    </div>
-                    <div className="text-3xl font-serif-editorial leading-none mb-2 text-[#161715]">43%</div>
-                    <div className="text-sm text-[#63615A]">lift in qualified reach</div>
-                  </div>
-                </div>
-
-                <div className="mt-4 rounded-2xl border border-[#161715]/10 bg-[#FAF7F2] p-4">
-                  <div className="flex items-center justify-between gap-3 mb-3">
-                    <div className="text-[10px] uppercase tracking-[0.18em] text-[#63615A] font-mono-numbers">
-                      Founder edit
-                    </div>
-                    <span className="text-[10px] font-semibold text-[#C45532]">0:30</span>
-                  </div>
-
-                  <div className="flex items-center gap-3">
-                    <button
-                      onClick={() => setIsPlayingSnippet(!isPlayingSnippet)}
-                      data-cursor-label={isPlayingSnippet ? 'Pause' : 'Play'}
-                      className="w-10 h-10 rounded-full bg-[#14281E] text-[#FAF7F2] flex items-center justify-center shrink-0 hover:bg-[#C45532] transition-colors"
-                      aria-label="Play soundbite sample"
-                    >
-                      {isPlayingSnippet ? (
-                        <Volume2 className="w-4 h-4 text-white animate-pulse" />
-                      ) : (
-                        <Play className="w-4 h-4 fill-current ml-0.5" />
-                      )}
-                    </button>
-
-                    <div className="flex-1">
-                      <div className="text-xs font-medium text-[#161715]">
-                        {isPlayingSnippet ? 'Playing signal cut...' : 'Extracting the thesis'}
-                      </div>
-                      <div className="mt-2 h-1.5 w-full rounded-full bg-[#DFD5C6] overflow-hidden">
-                        <div
-                          className={`h-full rounded-full bg-[#C45532] ${isPlayingSnippet ? 'w-3/4' : 'w-1/3'}`}
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div className="aspect-video overflow-hidden rounded-[12px] border border-[#161715]/10 bg-[#F3EEE4] shadow-[0_18px_40px_rgba(20,40,30,0.08)]">
+                <img
+                  src={HERO_CONTENT.image}
+                  alt="Reframe Studios storytelling campaign"
+                  className="w-full h-full object-contain object-center"
+                />
               </div>
             </div>
           </FadeIn>
         </div>
 
         <FadeIn delay={0.35} distance={30}>
-          <div className="relative overflow-hidden rounded-[28px] border border-[#161715]/10 bg-[#14281E] shadow-[0_35px_90px_rgba(20,40,30,0.16)] group">
+          <div className="relative aspect-video overflow-hidden rounded-[12px] border border-[#161715]/10 bg-[#14281E] shadow-[0_35px_90px_rgba(20,40,30,0.16)] group">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(196,85,50,0.24),transparent_24%),linear-gradient(180deg,rgba(20,40,30,0.08),rgba(20,40,30,0.56)_63%,rgba(20,40,30,0.72))] z-10 pointer-events-none" />
             <video
-              src="/IMG_2765.MP4"
+              src={heroVideoSrc}
               poster={HERO_CONTENT.image}
               autoPlay
               muted
               loop
               playsInline
-              className="w-full h-[340px] sm:h-[440px] lg:h-[560px] object-cover object-center filter saturate-[0.85] contrast-[1.06] brightness-[0.94] scale-[1.04] group-hover:scale-[1.08] transition-transform duration-[1400ms] ease-out"
+              className="w-full h-full object-cover object-center filter saturate-[0.85] contrast-[1.06] brightness-[0.94] scale-[1.04] group-hover:scale-[1.08] transition-transform duration-[1400ms] ease-out"
             />
 
             <div className="absolute inset-x-0 bottom-0 z-20 p-6 md:p-8 lg:p-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between text-[#FAF7F2]">

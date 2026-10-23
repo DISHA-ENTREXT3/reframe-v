@@ -28,13 +28,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenContact }) => {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-16 border-b border-[#161715]/10">
           {/* Brand Column */}
           <div className="md:col-span-5">
-            <div className="flex items-center gap-2 mb-4">
-              <span className="font-serif-editorial italic text-3xl text-[#14281E]">
-                Reframe
-              </span>
-              <span className="text-xs uppercase tracking-widest font-sans font-semibold text-[#63615A] pt-1">
-                Studios
-              </span>
+            <div className="mb-4">
+              <img src="/reframe-studios-logo.svg" alt="Reframe Studios" className="w-48 h-auto object-contain object-left" />
             </div>
 
             <p className="text-sm font-medium text-[#14281E] mb-3">

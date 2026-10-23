@@ -46,14 +46,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
           {/* Zone 1: Brand Wordmark */}
           <Link
             to="/"
-            className="text-lg md:text-xl font-bold tracking-tight text-[#161715] whitespace-nowrap shrink-0 flex items-center gap-2 group"
+            aria-label="Reframe Studios home"
+            className="whitespace-nowrap shrink-0 flex items-center group"
           >
-            <span className="font-serif-editorial italic text-2xl text-[#14281E] group-hover:text-[#C45532] transition-colors">
-              Reframe
-            </span>
-            <span className="text-xs uppercase tracking-widest font-sans font-semibold text-[#63615A] pt-1">
-              Studios
-            </span>
+            <img src="/reframe-studios-logo.svg" alt="Reframe Studios" className="w-36 h-auto object-contain transition-[filter] duration-300 group-hover:[filter:brightness(0)_saturate(100%)_invert(39%)_sepia(45%)_saturate(1200%)_hue-rotate(337deg)_brightness(90%)_contrast(90%)]" />
           </Link>
 
           {/* Zone 2: Navigation Links (Desktop) */}
@@ -119,13 +115,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
             >
               <div>
                 <div className="flex items-center justify-between pb-6 border-b border-[#161715]/10 mb-8">
-                  <Link to="/" onClick={() => setMobileMenuOpen(false)} className="flex items-center gap-2">
-                    <span className="font-serif-editorial italic text-2xl text-[#14281E]">
-                      Reframe
-                    </span>
-                    <span className="text-xs uppercase tracking-widest font-sans font-semibold text-[#63615A] pt-1">
-                      Studios
-                    </span>
+                  <Link to="/" onClick={() => setMobileMenuOpen(false)} aria-label="Reframe Studios home" className="group flex items-center">
+                    <img src="/reframe-studios-logo.svg" alt="Reframe Studios" className="w-40 h-auto object-contain transition-[filter] duration-300 group-hover:[filter:brightness(0)_saturate(100%)_invert(39%)_sepia(45%)_saturate(1200%)_hue-rotate(337deg)_brightness(90%)_contrast(90%)]" />
                   </Link>
                   <button
                     onClick={() => setMobileMenuOpen(false)}

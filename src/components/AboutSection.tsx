@@ -14,8 +14,6 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenContact }) => 
         {/* Section Index */}
         <FadeIn delay={0.05} distance={14}>
           <div className="flex items-center gap-3 text-xs uppercase tracking-widest text-[#63615A] font-semibold mb-6">
-            <span className="text-[#C45532]">10</span>
-            <span aria-hidden="true">/</span>
             <span>About Reframe</span>
           </div>
         </FadeIn>
@@ -57,7 +55,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenContact }) => 
           <FadeIn delay={0.25} distance={28} className="lg:col-span-5">
             <div className="relative rounded-xl overflow-hidden border border-[#161715]/10 shadow-lg">
               <img
-                src="/src/assets/images/reframe_executive_session_1792053253848.jpg"
+                src="/6.jpeg"
                 alt="Reframe Studios partner interview session"
                 referrerPolicy="no-referrer"
                 className="w-full h-[400px] object-cover object-top filter saturate-[0.9]"

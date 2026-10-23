@@ -11,14 +11,14 @@ import {
 } from '../types';
 
 export const HERO_CONTENT = {
-  kicker: "Private-Market Content & Storytelling",
+  kicker: "CONTENT & STORYTELLING FOR PRIVATE MARKETS",
   headline: "Be the investor founders already know before the first meeting.",
   subheadline:
-    "Reframe Studios helps private-market firms turn investment thinking, partner expertise, and portfolio stories into content that builds visibility, credibility, and stronger relationships.",
-  primaryCTA: "Explore Our Packages",
-  secondaryCTA: "Start a Conversation",
-  image: "/src/assets/images/hero_investor_studio_1792053253805.jpg",
-  investorImage: "/src/assets/images/reframe_executive_session_1792053253848.jpg",
+    "Reframe turns investment thinking, partner expertise and portfolio stories into content that builds visibility, credibility and stronger relationships.",
+  primaryCTA: "Explore our work",
+  secondaryCTA: "Talk to Reframe",
+  image: "/4.jpeg",
+  investorImage: "/5.jpeg",
   trustMarkers: [
     "Private Equity",
     "Growth Equity",
@@ -33,21 +33,18 @@ export const CORE_PACKAGES: CorePackage[] = [
     title: "YouTube Content IP",
     tagline: "Boardroom insight in a format founders remember.",
     summary:
-      "We turn partner conversations and market views into short, sharp video assets. The goal is direct signal, not volume.",
+      "Build a series around the thinking your firm wants to be known for.",
     deliverables: [
-      "Partner interviews and thesis-led shoots",
-      "Short-form edits for LinkedIn and founder channels",
-      "Series packaging for repeat distribution",
+      "Series concept",
+      "Partner interviews",
+      "YouTube episodes + short-form cuts",
     ],
     differentiators: {
-      investmentThinking:
-        "Clear investment logic, not commentary for commentary’s sake.",
-      partnerExpertise:
-        "One structured conversation produces a usable content system without extra partner load.",
-      portfolioStorytelling:
-        "The practical and operational story behind the decisions that mattered.",
+      investmentThinking: "Turn investment logic into clear points of view.",
+      partnerExpertise: "Build content around what partners already know.",
+      portfolioStorytelling: "Show the people and decisions behind the growth.",
     },
-    bestFor: "Firms that need a clear, repeatable media asset around their core thinking.",
+    bestFor: "Firms that want a repeatable content format around their thinking.",
     sampleAsset: "Inside Our Vertical SaaS Thesis",
     cadence: "Monthly Release",
   },
@@ -56,21 +53,18 @@ export const CORE_PACKAGES: CorePackage[] = [
     title: "Event Content Engine",
     tagline: "One event. Multiple usable content moments.",
     summary:
-      "We capture the useful parts of a keynote, panel, or summit and turn them into assets that can travel after the event is over.",
+      "Make the event last longer than the event.",
     deliverables: [
-      "On-site capture and rapid edits",
-      "High-signal clips from keynote and panel moments",
-      "Post-event recap assets for distribution",
+      "Pre-event content direction",
+      "On-ground capture",
+      "Post-event clips + follow-up assets",
     ],
     differentiators: {
-      investmentThinking:
-        "The strongest point of view, cut out from stage noise.",
-      partnerExpertise:
-        "No extra partner prep. We capture the conversation as it happens.",
-      portfolioStorytelling:
-        "Founder and portfolio moments that can be repurposed cleanly after the event.",
+      investmentThinking: "Cut out the strongest point of view from the noise.",
+      partnerExpertise: "Capture the conversation as it happens.",
+      portfolioStorytelling: "Turn founder moments into reusable assets after the room clears.",
     },
-    bestFor: "Firms that hold events, summits, or speaking moments that should keep working after the room clears.",
+    bestFor: "Firms that hold events or speaking moments that should keep working afterwards.",
     sampleAsset: "The 30 Seconds Worth Hearing",
     cadence: "Per Event",
   },
@@ -79,21 +73,18 @@ export const CORE_PACKAGES: CorePackage[] = [
     title: "Omnichannel Brand Presence",
     tagline: "Consistent visibility without turning partners into creators.",
     summary:
-      "We build a steady content rhythm around the few ideas that matter most: executive view, founder relevance, and clear market framing.",
+      "One point of view. Built to travel.",
     deliverables: [
-      "Executive commentary and point-of-view posts",
-      "Founder-facing explainers and framework assets",
-      "Quarterly firm perspective and editorial updates",
+      "Partner POV",
+      "LinkedIn + short-form",
+      "Portfolio and market storytelling",
     ],
     differentiators: {
-      investmentThinking:
-        "Turn a thesis into a defined external point of view.",
-      partnerExpertise:
-        "One monthly voice brief can create a month of consistent market commentary.",
-      portfolioStorytelling:
-        "Keep portfolio milestones, operating lessons, and founder stories in active circulation.",
+      investmentThinking: "Turn a thesis into a clearly owned external point of view.",
+      partnerExpertise: "Build a repeatable presence without adding partner burden.",
+      portfolioStorytelling: "Keep founder stories and milestones active in circulation.",
     },
-    bestFor: "Firms that want a stable, credible market presence without adding operational friction.",
+    bestFor: "Firms that want a stable, credible market presence without operational drag.",
     sampleAsset: "Why We Invested",
     cadence: "Ongoing",
   },
@@ -486,16 +477,15 @@ export const WHY_REFRAME_CONTENT = {
 };
 
 export const ABOUT_CONTENT = {
-  title: "Reframe Studios",
+  title: "ABOUT REFRAME",
   description:
-    "Reframe Studios is a content and storytelling studio built around private markets. We work with investment firms and their leadership teams to uncover the thinking, stories, and conversations already inside the business, then shape them into content people actually want to engage with.",
-  mission:
-    "Our work sits across strategy, partner-led content, video, portfolio storytelling, and distribution, with one focus:",
-  keyFocus: "Make strong thinking easier to see, understand, and remember.",
+    "Thoughtful content starts with people. Reframe Studios is a content and storytelling studio built around private markets.",
+  mission: "Thoughtful content starts with people.",
+  keyFocus: "Vrushali · Derrick · Manthan",
   principles: [
-    "Private-market specificity: No generic agency playbooks.",
-    "Executive-respecting workflows: Zero partner burden.",
-    "Editorial rigor: Substance over vanity metrics.",
+    "Private-market specificity",
+    "Executive-respecting workflows",
+    "Editorial rigor",
   ],
 };
 
@@ -561,8 +551,8 @@ export const WORK_PROOF_CONTENT: {
   note: string;
   cases: WorkProofItem[];
 } = {
-  headline: "Selected stories and work from our team.",
-  tagline: "High-craft narrative development across world-class industrial, automotive, and impact ecosystems.",
+  headline: "Selected Work",
+  tagline: "Selected stories and work from our team.",
   principleIntro: "Different sectors. Same principle.",
   principles: ["Find the strongest story.", "Tell it well.", "Make it travel."],
   note: "Selected team highlights and historical work from Reframe partners and core team members.",
@@ -571,24 +561,24 @@ export const WORK_PROOF_CONTENT: {
       id: "tata-motors",
       client: "Tata Motors",
       category: "Founder & Business Storytelling",
-      tagline: "Translating heavy industrial legacy into a human engineering narrative.",
+      tagline: "Turning industrial scale and business growth into a more human story.",
       description:
-        "Deep narrative documentation showcasing the strategic vision, design engineering breakthroughs, and boardroom resolve behind the next generation of industrial mobility.",
-      image: "/src/assets/images/work_tata_story_1792053253665.jpg",
-      narrativeAngle: "Unpacking the operational resilience and leadership decisions that transformed manufacturing heritage into modern consumer conviction.",
-      distributionStrategy: "Executive documentary series, partner keynotes, and targeted leadership vignettes.",
+        "Founder & Business Storytelling — turning industrial scale and business growth into a more human story.",
+      image: "/7.jpeg",
+      narrativeAngle: "Human storytelling for complex industrial growth stories.",
+      distributionStrategy: "Executive documentary series and strategic narrative assets.",
       attributionNote: "Team historical narrative direction & executive storytelling showcase.",
     },
     {
       id: "makemytrip-foundation",
       client: "MakeMyTrip Foundation",
       category: "Impact & Transformation Storytelling",
-      tagline: "Documenting community transformation beyond vanity metrics.",
+      tagline: "Bringing community and impact stories to life through documentary-led storytelling.",
       description:
-        "Capturing real ground-level community and ecological stewardship through cinematic documentary cinematography that balances institutional accountability with emotional resonance.",
-      image: "/src/assets/images/work_makemytrip_impact_1792053255363.jpg",
-      narrativeAngle: "Moving past dry CSR audits to spotlight real local leaders, tangible ecological outcomes, and sustainable systemic change.",
-      distributionStrategy: "High-impact cinematic short films, stakeholder annual letters, and digital narrative showcases.",
+        "Impact & Transformation Storytelling — bringing community and impact stories to life through documentary-led storytelling.",
+      image: "/8.jpeg",
+      narrativeAngle: "Community impact told through human-scale, documentary-led storytelling.",
+      distributionStrategy: "High-impact cinematic short films and stakeholder narrative assets.",
       attributionNote: "Team creative direction and documentary film leadership.",
     },
     {
@@ -597,10 +587,10 @@ export const WORK_PROOF_CONTENT: {
       category: "Premium Long-Form Storytelling",
       tagline: "Architectural precision and performance cinema.",
       description:
-        "Crafting cinematic visual narratives and behind-the-scenes engineering retrospectives that honor legacy precision while speaking to modern luxury dynamics.",
-      image: "/src/assets/images/work_bmw_editorial_1792053253363.jpg",
-      narrativeAngle: "Framing technical superiority through high-contrast cinematic lighting and visceral sound design.",
-      distributionStrategy: "Long-form editorial films, brand keynote assets, and premium digital showcases.",
+        "Premium long-form storytelling with cinematic realism and high-end product narrative craft.",
+      image: "/5.jpeg",
+      narrativeAngle: "Framing technical superiority through cinematic craft and premium storytelling.",
+      distributionStrategy: "Long-form editorial films and premium digital showcases.",
       attributionNote: "Team film production and luxury brand narrative direction.",
     },
     {
@@ -609,10 +599,10 @@ export const WORK_PROOF_CONTENT: {
       category: "Brand-Led Film & Narrative",
       tagline: "Heritage and electric reinvention told with cinematic weight.",
       description:
-        "Developing story frameworks that bridge century-old automotive lineage with forward-leaning technological transitions, honoring customer trust at scale.",
-      image: "/src/assets/images/hero_investor_studio_1792053253805.jpg",
-      narrativeAngle: "Celebrating the builders, plant engineers, and generational drivers at the heart of technological change.",
-      distributionStrategy: "Multichannel cinematic launch film, documentary shorts, and executive interview features.",
+        "Heritage and electric reinvention told with cinematic weight across brand and founder narratives.",
+      image: "/10.jpeg",
+      narrativeAngle: "Celebrating builders, operational resilience, and reinvention at the speed of modern market change.",
+      distributionStrategy: "Multichannel cinematic launch film and executive interview features.",
       attributionNote: "Team brand film and creative narrative contribution.",
     },
   ],
@@ -660,8 +650,8 @@ export const HOW_WE_THINK_CONTENT: { headline: string; subtitle: string; princip
 export const FINAL_CTA_CONTENT = {
   headline: "There is probably a better story already sitting inside your firm.",
   subheadline: "Let’s find it.",
-  cta: "Start a Conversation",
-  supportText: "Direct conversation with our partners Vrushali, Derrick, and Manthan. No junior sales reps. Strict confidentiality guaranteed.",
+  cta: "Talk to Reframe",
+  supportText: "",
 };
 
 export const FOOTER_CONTENT = {
@@ -670,11 +660,9 @@ export const FOOTER_CONTENT = {
   missionLine: "Built for firms that want to be known for more than the size of their fund.",
   links: [
     { name: "Packages", href: "/services" },
-    { name: "The Reframe Way", href: "/the-reframe-way" },
-    { name: "One Idea Travels", href: "/one-idea" },
-    { name: "Selected Work", href: "/work" },
-    { name: "About & Team", href: "/about" },
-    { name: "Start a Conversation", href: "/contact" },
+    { name: "Work", href: "/work" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
   ],
   contacts: {
     email: "vrushali@reframestudios.co",
